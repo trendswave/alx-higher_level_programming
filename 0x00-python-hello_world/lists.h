@@ -4,19 +4,22 @@
 #include <stdlib.h>
 
 /**
- *struct s_listint - singly linked list
- *@int1: integer
- *@node: points to the next node
+ *struct listint_s - singly linked list
+ *@n: integer
+ *@next: points to the next node
  *
  *Description: singly linked list node structure
- *for ALX project
+ * 
  */
-typedef struct s_listint
+typedef struct listint_s
 {
-	    int int1;
-	        struct s_listint *node;
-} s_listint;
+	    int n;
+	        struct listint_s *next;
+} listint_t;
 
-
+size_t print_listint(const listint_t *h);
+listint_t *add_nodeint(listint_t **head, const int n);
+void free_listint(listint_t *head);
+int check_cycle(listint_t *list);
 
 #endif /* LISTS_H */
