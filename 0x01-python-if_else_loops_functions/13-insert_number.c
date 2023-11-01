@@ -70,5 +70,10 @@ listint_t *insert_node(listint_t **head, int number)
 	if (current->n >= number)
 		return (add_nodeint(head, number));
 	for (index = 0; current != NULL && current->next != NULL; current = current->next, index++)
-		return (insert_nodeint_at_index(head, index, number));
+	{
+		if (current->next->n >= number)
+			break;
+	}
+	index++;
+	return (insert_nodeint_at_index(head, index, number));
 }
