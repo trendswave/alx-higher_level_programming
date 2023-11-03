@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-from hidden_4 import *
-if __name__ == '__main__':
-    for el in dir():
-        if el[0] == el[1] == '_':
-            continue
-        print(el)
+if __name__ == "__main__":
+    import hidden_4
+    for n in dir(hidden_4):
+        if n[0] != '_' and n[1] != '_':
+            print(n)
