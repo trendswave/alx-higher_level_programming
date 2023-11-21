@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def magicc_calculation(a, b):
+def magic_calculation(a, b):
 
     result = 0
 
