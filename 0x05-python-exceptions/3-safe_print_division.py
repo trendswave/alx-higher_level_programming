@@ -3,7 +3,7 @@ def safe_print_division(a, b):
     quotient = None
     try:
         quotient = a / b
-    except:
+    except ZeroDivisionError:
         pass
     finally:
         if quotient is not None:
