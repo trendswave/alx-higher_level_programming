@@ -1,6 +1,6 @@
 
 # 0x09 - pythonn - Everything is object
-<img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/70f9ea0e969dfcc407a7427aba4786d87a920494.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231128T210454Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ed55b23bc11cdd489d3246498f3ffa0d970de5bd18eb737b084b5e2035a8e612.jpg"alt="0x09">
+<img src="C:\Users\USER\Desktop\0x09.gif"alt="0x09">
 ## Resources:cap:
 Read or watch:
 * [9.10. Objects and values](https://intranet.hbtn.io/rltoken/n1x09X-KJSllpJkJorBw2A)
