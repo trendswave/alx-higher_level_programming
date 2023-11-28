@@ -1,0 +1,55 @@
+The ``3-say_my_name`` module and task 2
+======================
+
+Using ``say_my_name`` function
+-------------------
+
+Importing the function from the module:
+    >>> print_square = __import__('4-print_square').print_square
+
+Print a square of size 4:
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+Print a square of size 6:
+    >>> print_square(6)
+    ######
+    ######
+    ######
+    ######
+    ######
+    ######
+
+Type size is float:
+    >>> print_square(6.0)
+    Traceback (most recent call last):
+	...
+    TypeError: size must be an integer
+
+Size is zero:
+    >>> print_square(0)
+
+Size is less than zero:
+    >>> print_square(-23)
+    Traceback (most recent call last):
+	...
+    ValueError: size must be >= 0
+
+Non argument:
+    >>> print_square()
+    Traceback (most recent call last):
+    ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
+    
+Module docstring:
+	 >>> m = __import__("4-print_square").__doc__
+	 >>> len(m) > 1
+	 True
+
+Function docstring:
+	 >>> f = __import__("4-print_square").print_square.__doc__
+     >>> len(f) > 1
+     True
