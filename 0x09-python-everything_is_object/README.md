@@ -1,6 +1,6 @@
 
-# 0x09 - pythonn - Everything is object
-<img src="C:\Users\USER\Desktop\0x09.gif"alt="0x09">
+# 0x09 - python  - Everything is object
+
 ## Resources:cap:
 Read or watch:
 * [9.10. Objects and values](https://intranet.hbtn.io/rltoken/n1x09X-KJSllpJkJorBw2A)
