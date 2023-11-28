@@ -1,7 +1,7 @@
 
 ## 0x07 - pythonn - Test-driven development
 
-## Resources:lens:
+## Resources:computer:
 Read or watch:
 * [doctest — Test interactive Python examples](https://intranet.hbtn.io/rltoken/alaT1C9CeCbkRKh-yjMRww)
 * [doctest – Testing through documentation](https://intranet.hbtn.io/rltoken/cpEYbv_Z55QrSVRiuG5tUw)
