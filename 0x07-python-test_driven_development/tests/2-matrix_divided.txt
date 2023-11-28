@@ -1,0 +1,78 @@
+The ``2-matrix_divided`` module and task 1
+======================
+
+Using ``matrix_divided`` function
+-------------------
+
+Importing the function from the module:
+	>>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+Regular division:
+	>>> matrix = [[1, 2, 3], [4, 5, 6]]
+	>>> matrix_divided(matrix, 3)
+	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+An element in matrix is not a list:
+	>>> matrix = [[1, 2, 3], 4]
+	>>> matrix_divided(matrix, 3)
+	Traceback (most recent call last):
+	...
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+All the elements in matrix are not a list:
+    	>>> matrix = [1, 2, 3, 4]
+	>>> matrix_divided(matrix, 3)
+	Traceback (most recent call last):
+	...
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+List len are not equal:
+     	 >>> matrix_divided([[1, 2, 3], [3, 2]], 12)
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: Each row of the matrix must have the same size
+
+List have string values:
+     	 >>> matrix_divided([[1, "2"], ["3", 4]], 12)
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Div is a string:
+       	 >>> matrix_divided([[1, 2, 3], [4, 5, 6]], "12")
+       	 Traceback (most recent call last):
+         ...
+         TypeError: div must be a number
+	 
+Div is equal to 0:
+       	 >>> matrix_divided([[1, 2, 3], [4, 5, 6]], 0)
+    	 Traceback (most recent call last):
+    	 ...
+	 ZeroDivisionError: division by zero
+
+Div is equal to infinite float:
+         >>> matrix_divided([[1, 2], [2, 1]], float('inf'))
+	 [[0.0, 0.0], [0.0, 0.0]]
+
+Missing argumets:
+	 >>> matrix_divided()
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+Missing one argumet:
+	 >>> matrix_divided([1,2])
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+Module docstring:
+	 >>> m = __import__("2-matrix_divided").__doc__
+	 >>> len(m) > 1
+	 True
+
+Function docstring:
+	 >>> f = __import__("2-matrix_divided").matrix_divided.__doc__
+     	 >>> len(f) > 1
+     	 True
+

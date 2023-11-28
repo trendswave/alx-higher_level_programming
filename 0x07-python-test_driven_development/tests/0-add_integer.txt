@@ -1,0 +1,80 @@
+The ``0-add_integer`` module and task 0
+======================
+
+Using ``add_integer`` function
+-------------------
+
+Importing the function from the module:
+	>>> add_integer = __import__("0-add_integer").add_integer
+
+Regular addition:
+	 >>> add_integer(2, 3)
+	 5
+
+Positive with negative:
+	 >>> add_integer(2, -4)
+	 -2
+
+Negative with positive:
+	 >>> add_integer(-6, 8)
+	 2
+
+Addition over multiple values:
+	 >>> [add_integer(i, i ** 2) for i in range(6)]
+	 [0, 2, 6, 12, 20, 30]
+
+Float with int:
+	 >>> add_integer(2.1, 4)
+	 6
+
+Int with float:
+	 >>> add_integer(5, 7.8)
+	 12
+
+Both float:
+	 >>> add_integer(2.45, 3.1)
+	 5
+
+Passed NaN:
+	 >>> add_integer(1, float('nan'))
+	 Traceback (most recent call last):
+	 ...
+	 ValueError: cannot convert float NaN to integer
+	
+Float overflow
+	 >>> add_integer(4, float("inf"))
+	 Traceback (most recent call last):
+	 ...
+	 OverflowError: cannot convert float infinity to integer
+
+Non-number with number:
+	 >>> add_integer([1], 2)
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: a must be an integer
+
+Checking number with non-number:
+	 >>> add_integer(3, "2")
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: b must be an integer
+
+One argument:
+	 >>> add_integer(1)
+	 99
+
+Non arguments:
+	 >>> add_integer()
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Module docstring:
+	 >>> m = __import__("0-add_integer").__doc__
+	 >>> len(m) > 1
+	 True
+
+Function docstring:
+	 >>> f = __import__("0-add_integer").add_integer.__doc__
+	 >>> len(f) > 1
+	 True
