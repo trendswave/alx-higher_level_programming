@@ -1,7 +1,7 @@
 
-n - Test-driven development
+## 0x07 - pythonn - Test-driven development
 
-## Resources:search:
+## Resources:lens:
 Read or watch:
 * [doctest — Test interactive Python examples](https://intranet.hbtn.io/rltoken/alaT1C9CeCbkRKh-yjMRww)
 * [doctest – Testing through documentation](https://intranet.hbtn.io/rltoken/cpEYbv_Z55QrSVRiuG5tUw)
@@ -51,4 +51,4 @@ What you should learn from this project:
 ---
 
 ## Author
-* **Paul Micheal** - [davixcky](https://github.com/trendswave)
+* **Paul Micheal** - [Trendswave](https://github.com/trendswave)
