@@ -1,7 +1,7 @@
 # 0x0A. Python - Inheritance
 
 ## Resources:books:
-Read or watch:computer:
+Read or watch:
 * [Inheritance](https://intranet.hbtn.io/rltoken/E2Bs3bxX8GuSEKuWqswU7g)
 * [Multiple inheritance](https://intranet.hbtn.io/rltoken/auwnZOKkBZ97JaLtrMryuA)
 * [Inheritance in Python](https://intranet.hbtn.io/rltoken/ycewwwPmDpXqRp2R1FW51w)
