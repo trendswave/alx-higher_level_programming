@@ -1,2 +1,3 @@
--- creates a new database, if it is not in existent and should not fail
-CREATE DATABASE IF NOT EXIST hbtn_0c_0;
+-- create database; shouldn't fail if non-existent
+
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
